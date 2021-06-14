@@ -1,0 +1,23 @@
+@import "../styles/variable.scss";
+
+.outlined-box {
+  position: relative;
+  display: block;
+  color: white;
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  .box {
+    position: relative;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 6px;
+  }
+}

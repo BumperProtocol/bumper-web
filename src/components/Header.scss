@@ -1,0 +1,162 @@
+@import "../styles/variable.scss";
+@media screen and (min-width: 900px) {
+  .pc {
+    display: inline;
+  }
+  .wap {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .pc {
+      display: none;
+  }
+  .wap {
+      display: block;
+  }
+}
+
+.nav-header {
+  position: relative;
+  width: 100%;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    min-width: 800px;
+    max-width: 1080px;
+  }
+
+  .navigator {
+    flex: 2;
+    text-align: center;
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+    }
+  }
+
+  .label.theme {
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .label.bp {
+    margin-right: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0 10px 2px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-image: $grad-btn-bg;
+
+    .label {
+      margin-left: 8px;
+      font-size: 12px;
+      vertical-align: middle;
+    }
+  }
+
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 72px;
+
+    .logo {
+      padding: 5px 0;
+
+      .whitepaper {
+        margin-left: 20px;
+        vertical-align: middle;
+      }
+    }
+
+    .logo-mobile {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+      display: inline-block;
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .white-paper {
+      margin-left: 20px;
+    }
+  }
+
+  .navtab {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: #858487;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  .wallet-mobile {
+    display: none;
+  }
+}
+
+.menu-dropdown {
+  .ant-dropdown-menu-item {
+    font-size: 18px;
+    color: $background-color-dark;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .nav-header {
+    .container {
+      max-width: 720px;
+      min-width: 320px;
+    }
+    .logo-wrapper {
+      .logo-pc {
+        display: block;
+        padding: 2px;
+      }
+      .logo-mobile {
+        display: block;
+        padding: 15px 5px;
+      }
+      img {
+        display: inline-block;
+        width: 100px;
+        height: auto;
+        margin-top: 18px;
+      }
+    }
+    .navtab {
+      width: 60px;
+    }
+    .wallet-pc {
+      display: none;
+    }
+    .wallet-mobile {
+      display: block;
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "./variable.scss";
+
+.theme-dark {
+    .ant-switch-checked {
+        background-color: $btn-green-dark;
+    }
+    .ant-switch {
+        border: $btn-green-dark solid 1px;
+    }    
+}
+.theme-light {
+    .ant-switch-checked {
+        background-color: $btn-green-light;
+    }
+    .ant-switch {
+        border: $btn-green-light solid 1px;
+    }    
+}
+
+.ant-modal-content {
+    background: #3C4655 !important;
+    color: #fff !important;
+}
+
+.ant-modal-header {
+    background: transparent !important;
+    border-bottom: none;
+    .ant-modal-title {
+        color: #fff !important;
+    }
+}

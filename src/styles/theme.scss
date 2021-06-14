@@ -1,0 +1,125 @@
+@import "./variable.scss";
+
+.theme-dark {
+    background: $background-color-dark;
+    color: $font-color-dark;
+
+    // btn
+    .navtab.active {
+        color: $btn-green-dark;
+        border-bottom: solid $btn-green-dark 1px;
+    }
+    .navtab:hover {
+        color: $btn-green-dark;
+    }
+
+    .green {
+        color: $btn-green-dark;
+    }
+    .yellow {
+        color: $text-yellow-dark !important;
+    }
+    .bGreen {
+        color: $btn-green-dark;
+    }  
+    .op-btn-liquidity {
+        border: $btn-green-dark solid 1px !important;
+        color: $btn-green-dark !important;
+      }
+    .op-btn.disabled {
+        color: white; 
+        background: rgba(255, 255, 255, 0.12);
+    }
+}
+.theme-light {
+    background: $background-color-light;
+    color: $font-color-light;
+
+    .navtab.active {
+        color: $btn-green-light;
+        border-bottom: solid $btn-green-light 1px;
+    }
+    .navtab:hover {
+        color: $btn-green-light;
+    }
+    .green {
+        color: $btn-green-light;
+    }
+    .yellow {
+        color: $text-yellow-light !important;
+    }
+    .bGreen {
+        color: $btn-green-light;
+    }
+    .op-btn-liquidity {
+        border: $btn-green-light solid 1px !important;
+        color: $btn-green-light !important
+    }
+    .op-btn.disabled {
+        color: 333 !important; 
+        background:#999 !important;
+        cursor: not-allowed !important;
+    }
+}
+
+
+.p-box-dark {
+    border: $font-color-dark solid 1px;
+    border-right: none;
+}
+.p-box-light {
+    border: $font-color-light solid 1px;
+    border-right: none;
+}
+.p-cell-dark {
+    color: $font-color-dark;
+    border-right: $font-color-dark solid 1px;
+}
+.p-cell-light {
+    color: $font-color-light;
+    border-right: $font-color-light solid 1px;
+}
+
+// common
+.common-dark {
+    border: 1px solid $font-color-dark;
+    color: $font-color-dark;
+}
+.common-light {
+    border: 1px solid $font-color-light;
+    color: $font-color-light;
+}
+.text-dark {
+    color: $font-color-dark;
+}
+.text-light {
+    color: $font-color-light;
+}
+.border-dark {
+    border: 1px solid $font-color-dark;
+}
+.border-light {
+    border: 1px solid $font-color-light;
+}
+.bg-dark {
+    background: $market-bg-color-dark;
+}
+.bg-light {
+    background: $market-bg-color-light;
+}
+.bg-dark-inner {
+    background: $market-bg-color-dark-inner;
+}
+.bg-light-inner {
+    background: $market-bg-color-light-inner;
+}
+
+// icon
+.icon-dark {
+    border-right: $font-color-dark solid 1px;
+}
+.icon-light {
+    border-right: $font-color-light solid 1px;
+}
+
+

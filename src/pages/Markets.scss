@@ -1,0 +1,324 @@
+@import "../styles/variable.scss";
+
+$box-width: 280px;
+
+.card {
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+  .card-wallet{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    .card-wallet-icon {
+      margin-left: 8px;
+    }
+  }
+
+  .card-header {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+
+    .card-header-content {
+      flex: 1 1 auto;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.334;
+      display: block;
+
+      .card-avatar {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        font-size: 1.25rem;
+        align-items: center;
+        flex-shrink: 0;
+        font-family: Quicksand;
+        line-height: 1;
+        user-select: none;
+        border-radius: 50%;
+        justify-content: center;
+        display: inline-block;
+      }
+
+      .card-icon-outlink {
+        width: 16px;
+        height:16px;
+        color: rgb(191, 194, 206);
+        cursor: pointer;
+        margin-left: 3px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .card-container{
+    width: 100%;
+    overflow: hidden;
+
+    .card-table { 
+      width: 100%;
+      border-collapse: separate;
+      display: table;
+      border-spacing: 0;
+
+      .market-cell {
+        display: flex;
+        align-items: center;
+        min-width: 250px;
+      }
+
+      .card-img-u {
+        text-decoration-style: dotted;
+        text-underline-offset: 1px;
+        cursor: help;
+        text-decoration-color: rgb(191, 194, 206);
+        text-decoration: underline;
+      }
+
+      .card-img-box {
+        min-width: 65px;
+        .col-img-wrap{
+          min-width: 10px;
+          margin-right: -12px;
+          display: inline-flex;
+        }
+        .col-img {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          overflow: hidden;
+          position: relative;
+          font-size: 1.25rem;
+          align-items: center;
+          flex-shrink: 0;
+          font-family: Quicksand;
+          line-height: 1;
+          user-select: none;
+          border-radius: 50%;
+          justify-content: center;
+          img {
+            color: transparent;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            text-align: center;
+            text-indent: 10000px;
+          }
+        }
+        .paired-img-wrap{
+          width: 25px;
+          height: 25px;
+          min-width: 35px;
+          display: inline-flex;
+        }
+        .paired-img {
+          width: 25px;
+          height: 25px;
+          top: 7px;
+          display: flex;
+          overflow: hidden;
+          position: relative;
+          font-size: 1.25rem;
+          align-items: center;
+          flex-shrink: 0;
+          font-family: Quicksand;
+          line-height: 1;
+          user-select: none;
+          border-radius: 50%;
+          justify-content: center;
+          img {
+            color: transparent;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            text-align: center;
+            text-indent: 10000px;
+          }
+        }
+      }
+
+      thead {
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit;
+        tr {
+          color: inherit;
+          display: table-row;
+          outline: 0;
+          vertical-align: middle;
+          th {
+            top: 0;
+            left: 0;
+            z-index: 2;
+            text-align: center;
+            font-weight: 500;
+            line-height: 1.8rem;
+            padding: 5px 0;
+            width: 25%;
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            display: table-cell;
+            padding: 10px 10px;
+            font-size: 0.875rem;
+            text-align: left;
+            font-family: Quicksand;
+            font-weight: 400;
+            line-height: 1.43;
+            border-bottom: 1px solid rgba(224, 224, 224, 1);
+            vertical-align: inherit;
+            text-align: center;
+            width: 25%;
+            position: relative;
+
+            .btokenTd {
+              padding-left: 10%;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .op-box {
+    text-align: center;
+    padding: 10px 10px 20px;
+    position: relative;
+
+    .op-box-setting {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      .icon {
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+
+    .navigator{
+      max-width: 80%;
+      margin-left: 10%;
+
+      .navtab {
+        display: inline-block;
+        text-align: center;
+        width: 18%;
+        border-radius: 0px;
+        margin-right: 4px;
+        height: 30px;
+        padding: 6px 8px;
+    
+        &.active {
+          font-style: italic;
+        }
+      }
+    }
+
+    .op-tips{
+      color: rgb(191, 194, 206);
+      text-align: center;
+      padding: 3px 0px;
+
+      &.yellow {
+        cursor: help;
+      }
+    }
+
+    .op-row2{
+      display: flex;
+      .op-row2-l{
+        flex: 1;
+        text-align: left;
+      }
+    }
+
+    .op-btn-row {
+      display: flex; 
+      align-items: center;
+
+      .op-btn-base {
+        margin: 8px 0;
+        color: #fff;
+        background: $grad-btn-bg;
+        padding: 6px 16px;
+        font-size: 0.875rem;
+        min-width: 64px;
+        box-sizing: border-box;
+        font-weight: 500;
+        line-height: 1.75;
+        border-radius: 4px;
+        text-transform: none;
+        box-shadow: none; 
+        border: none;
+        cursor: pointer;
+      }
+
+      .op-btn {
+        flex: 1;
+        width: 100%;
+      }
+
+      .op-btn-liquidity {
+        float: right;
+        margin-left: 10px;
+        width: 110px;
+        background: transparent;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+// pc端处理
+@media screen and (min-width: 900px) {
+  .mint-pc {
+    display: block;
+  }
+  .mint-wap {
+    display: none;
+  }
+}
+
+// 移动端处理
+@media screen and (max-width: 900px) {
+  .mint-pc {
+    display: none;
+  }
+  .mint-wap {
+    display: block;
+  }
+  .titleTd {
+    width: 40%;
+  }
+  .card-header-content {
+    margin-top: 20px;
+  }
+  .card-container {
+    overflow: scroll !important;
+  }
+  .market-cell {
+    min-width: 0 !important;
+  }
+  .navigator{
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    .navtab {
+      &.active {
+        font-style: normal !important;
+      }
+    }
+  }
+  .op-box {
+    font-size: 1rem !important;
+  }
+}

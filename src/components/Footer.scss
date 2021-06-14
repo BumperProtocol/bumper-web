@@ -1,0 +1,38 @@
+@import '../styles/variable.scss';
+
+.footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.foot-tips {
+  text-align: center;
+  color: rgb(192, 93, 79);
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+.foot-container {
+  position: relative;
+  margin: 5px auto;
+  width: 380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .icon{
+    width: 50px;
+    height: 20px;
+    padding: 0px 10px;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  .text {
+    padding:0px 10px;
+  }
+
+}
